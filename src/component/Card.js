@@ -6,10 +6,10 @@ import Favourite from "./Favourite";
 const Card = ({ product, toCartButton }) => {
   return (
     <div className="card" onDoubleClick={() => toCartButton(product.id)}>
-      <Favourite />
-      <img src={product.image} className="card-img-top " alt="..." />
+      <Favourite product ={product} />
+      <img src={product.image} className="card-img-top" alt="..." />
       <div className="card-body">
-        <h2 className="card-title">{product.title}</h2>
+        <h2 className="card-title">{product.title.split(' ').slice(0, 3).join(' ')}</h2>
         <div className="d-flex justify-content-between align-items-center">
           <div className="d-flex-column">
             <p class="price">Total Price</p>

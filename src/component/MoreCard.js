@@ -12,7 +12,7 @@ import img5 from "../assets/fruit-group/group11.png";
 const MoreCard = ({ product, toCartButton }) => {
   return (
     <div className="card" onDoubleClick={()=>toCartButton(product.id)}>
-      <Favourite/>
+      <Favourite product ={product} />
       <img src={product.image} className="card-img-top img-fluid" alt="..." />
       <div className="card-body">
         <h5 className="card-title">{product.title}</h5>

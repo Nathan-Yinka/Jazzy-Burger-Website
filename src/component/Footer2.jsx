@@ -12,7 +12,7 @@ import "../styles/Footer.css";
 
 const Footer2 = () => {
   return (
-    <div className="main-cont">
+    <div className="">
       <footer>
         <div className="head col-md-12">
           <div className="first-container">
